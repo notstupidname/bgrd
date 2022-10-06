@@ -1,0 +1,21 @@
+plugins:
+  - jekyll-seo-tag
+
+social:
+  name: А510
+  links:
+    - https://www.facebook.com/a510ru
+    - http://instagram.com/a510ru
+
+logo: /images/icon-512.png
+url: https://dub.a510.ru
+
+title: "Дубровское - А510 + Akron"
+lang: "ru_RU"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: /images/icon-512.png
