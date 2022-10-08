@@ -200,20 +200,36 @@ section {
     text-align: center;
 }
 
-    #slide9 div {
-        width: clamp(320px, 80%, 65ch);
-        text-align: center;
-    }
+#slide9 div {
+    width: clamp(320px, 80%, 65ch);
+    text-align: center;
+}
 
-    #slide9 h2 {
-        margin-bottom: 1em;
-    }
+#slide9 h2 {
+    margin-bottom: 1em;
+}
+
+#slide10 > div {
+    text-align: center;
+}
 
 #slide10 h2 {
     margin-bottom: 1em;
 }
 
-#slide10 > div {
+#slide11 > div {
+    text-align: center;
+}
+
+#slide11 h2 {
+    margin-bottom: 1em;
+}
+
+#slide12 h2 {
+    margin-bottom: 1em;
+}
+
+#slide12 > div {
     text-align: center;
 }
 
@@ -228,6 +244,7 @@ section {
 .table-wrapper {
     overflow: auto;
     width: 95vw;
+    margin: auto;
 }
 
 table {
@@ -288,6 +305,10 @@ table.alt {
         font-weight: 500;
     }
 
-    table.alt tbody tr td.tab {
+    table.alt tbody tr.mid {
+        font-weight: 500;
+    }
+
+    table tbody tr td.tab {
         padding-left: 4ch;
     }
