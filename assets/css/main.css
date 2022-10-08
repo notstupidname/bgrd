@@ -115,14 +115,56 @@ html {
 }
 
 section {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    /* position: sticky;
-    top: 0; */
+    position: sticky;
+    top: 0;
     background: #fff;
-    /* box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%); */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .2);
+    display: grid;
+    place-items: center;
+}
+
+.slide {
+    grid-template-columns: 2fr 3fr;
+}
+
+    .slide img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .slide div:first-child {
+        width: clamp(300px, 65ch, 90%);
+        padding: 2rem 0;
+    }
+
+.rtl {
+    direction: rtl;
+}
+
+    .rtl div:first-child {
+        direction: ltr;
+    }
+
+@media screen and (max-width: 1200px) {
+
+    .slide {
+        grid-template-rows: 2fr 3fr;
+        grid-template-columns: none;
+        max-height: 100vh;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    table.basic {
+        font-size: 90%;
+    }
+
 }
 
 #slide1 {
@@ -158,41 +200,21 @@ section {
     text-align: center;
 }
 
-.slide {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
+    #slide9 div {
+        width: clamp(320px, 80%, 65ch);
+        text-align: center;
+    }
+
+    #slide9 h2 {
+        margin-bottom: 1em;
+    }
+
+#slide10 h2 {
+    margin-bottom: 1em;
 }
 
-    .slide img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
-    .slide div:first-child {
-        width: clamp(300px, 65ch, 90%);
-        padding: 2rem 0;
-    }
-
-.rtl {
-    direction: rtl;
-}
-
-    .rtl div:first-child {
-        direction: ltr;
-    }
-
-@media screen and (max-width: 1200px) {
-
-    .slide {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: none;
-        max-height: 100vh;
-        overflow: hidden;
-    }
-
+#slide10 > div {
+    text-align: center;
 }
 
 /* Google map */
@@ -200,3 +222,72 @@ section {
     height:100%;
     width:100%;
 }
+
+/* Table */
+
+.table-wrapper {
+    overflow: auto;
+    width: 95vw;
+}
+
+table {
+    width: 100%;
+}
+
+    table tbody tr {
+        border-bottom: solid 1px #ccc;
+        border-left: 0;
+        border-right: 0;
+    }
+    
+        table tbody tr:last-child {
+            border: 0;
+        }
+
+    table td,
+    table th {
+        padding: 0.5em 0 0.25em 0;
+        text-align: right;
+    }
+    
+        table td:first-child,
+        table th:first-child {
+            text-align: left;
+        }
+
+        table.basic td:last-child {
+            font-weight: 400;
+        }
+
+table.alt {
+    width: clamp(50rem,75rem,90%);
+    font-size: 80%;
+    margin: auto;
+}
+
+    table.alt thead {
+        background: #ccc;
+    }
+
+    table.alt * {
+        border: solid 1px #ccc;
+        padding: 0.2em 0.4em;
+    }
+
+    table.alt tbody,
+    table.alt tr {
+        border: 0;
+    }
+
+    table.alt tbody tr:last-child {
+        border: inherit;
+    }
+
+    table.alt tbody tr.major {
+        background: #eee;
+        font-weight: 500;
+    }
+
+    table.alt tbody tr td.tab {
+        padding-left: 4ch;
+    }
