@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em;
     letter-spacing: 0.2em;
     margin-bottom: 0.5em;
+    font-weight: 600;
 }
 
 h1 {
@@ -176,33 +177,8 @@ section {
     display: grid;
     place-items: center;
     text-align: center;
-    background: url('/images/slides/1.jpg');
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    transform-style: preserve-3d;
-}
-
-    #slide1::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    #slide1 header {
-        z-index: 1;
-        transform: translateZ(1px);
-        color: #fff;
-    }
-
-#slide2 {
-    display: grid;
-    place-items: center;
-    text-align: center;
+    color: #fff;
+    background-color: #000;
 }
 
 #slide9 div {
@@ -405,7 +381,7 @@ table {
         }
 
 table.alt {
-    width: clamp(50rem,75rem,90%);
+    width: clamp(50rem,65rem,90%);
     font-size: 80%;
     margin: auto;
     line-height: 1.6;
@@ -423,6 +399,10 @@ table.alt {
     table.alt tbody,
     table.alt tr {
         border: 0;
+    }
+
+    table.alt tbody tr {
+        white-space: nowrap;
     }
 
     table.alt tbody tr:last-child {
