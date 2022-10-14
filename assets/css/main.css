@@ -215,13 +215,14 @@ section {
 }
 
 #slide13 div {
-    width: clamp(320px, 90%, 45ch);
+    width: clamp(320px, 90%, 50ch);
     text-align: center;
+    line-height: 1.6;
 }
 
     #slide13 table {
         font-size: 1.4rem;
-        font-weight: 400;
+        font-weight: 600;
     }
 
     #slide13 table tr {
@@ -231,6 +232,7 @@ section {
     #slide13 table tr td:last-child{
         white-space: nowrap;
         vertical-align: middle;
+        font-weight: 300;
     }
 
 /* Google map */
