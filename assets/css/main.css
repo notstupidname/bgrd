@@ -235,6 +235,36 @@ section {
         font-weight: 300;
     }
 
+#slide14 {
+    background: #000;
+}
+
+#slide14 div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+#slide14 svg {
+    height: 5rem;
+    stroke: #fff;
+    stroke-width: 20px;
+    color: #fff;
+}
+
+#slide14 p {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#slide14 img {
+    filter: brightness(3);
+}
+
 /* Google map */
 #map {
     height:100%;
