@@ -215,17 +215,23 @@ section {
 }
 
 #slide13 div {
-    width: clamp(320px, 80%, 65ch);
+    width: clamp(320px, 90%, 45ch);
     text-align: center;
 }
 
-#slide13 h2 {
-    margin-bottom: 1em;
-}
+    #slide13 table {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
 
-#slide13 h4 {
-    margin: 2em 0;
-}
+    #slide13 table tr {
+        border: 0;
+    }
+
+    #slide13 table tr td:last-child{
+        white-space: nowrap;
+        vertical-align: middle;
+    }
 
 /* Google map */
 #map {
